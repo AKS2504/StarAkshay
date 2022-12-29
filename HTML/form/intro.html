@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <p>form tag will helps to send client data to the server</p>
+    <p>form input type submit will helps to post form to the server</p>
+    <p>there are tow methods for sending data to the server</p>
+    <ul>
+        <li>GET -> use URL for sending data / less secure / have limit of 1024 byets 2048 char only / not supported file uploading.</li>
+        <li>POST -> not using URL / secure / no limit / support file uploading.</li>
+    </ul>
+    <p>name attribute will helps u to recieve data to server form client</p>
+    <p>id mainly used in JS</p>
+    <form method="get">
+        <input type="text" name="username" id="">
+        <br>
+        <input type="password" name="password" id="">
+        <br>
+        <!-- <input type="file" name="profilepic" id=""> not supported in GET method-->
+        <br>
+        <input type="submit" name="save" id="">
+    </form>
+    <h2>POST</h2>
+    <form method="post" enctype="multipart/form-data">
+        <input type="text" name="email" id="">
+        <br>
+        <input type="password" name="post_password" id="">
+        <br>
+        <input type="file" name="profilepic" id="">
+        <br>
+        <input type="submit" name="save" id="">
+    </form>
+    <form action="serverpage.php" method="post">
+        <input type="text" name="email" id="">
+        <br>
+        <input type="password" name="post_password" id="">
+        <br>
+        <input type="submit" name="save" id="">
+    </form>
+
+</body>
+</html>
