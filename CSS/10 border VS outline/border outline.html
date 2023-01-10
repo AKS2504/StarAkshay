@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border-example{
+            /* border: 50px; */
+            /* border:solid;
+            border:solid grey; */
+            /* border-color: grey;
+            border-style: dashed;
+            border-width: 5px; */
+            border: 10px solid green ;
+        }
+        div[class*="border-style"] {
+            padding: 15px;
+            margin: 20px;
+            border-width: 5px;
+        }
+        
+        .border-style-dashed{ border-style:dashed ;}
+        .border-style-dotted{ border-style:dotted ;}
+        .border-style-double{ border-style:double ;}
+        .border-style-groove{ border-style:groove ;}
+        .border-style-outset{ border-style:outset ;}
+        .border-style-ridge{ border-style:ridge ;}
+        .border-style-solid{ border-style:solid ;}
+    .border-radi{
+        display: inline-block;
+        border: 5px solid teal;
+        margin: 50px;
+        padding: 10px;
+        /* border-radius: 50%; */
+        /* border-radius: 5%; */
+        /* border-radius: 0px 80px 0px 80px; */
+        border-radius: 0px 20px 0px 20px;
+    }
+
+    </style>
+</head>
+<body>
+    
+<div class="border-example">
+    <br>
+    <br>
+    <br>
+    <div class="border-radi">Data</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    something
+    <ul>
+        <li> border-color</li>
+        <li> border-style</li>
+        <li> border-width</li>
+    </ul>
+
+
+    <div class="border-style-dashed">Testing border-style-dashed</div>
+    <div class="border-style-dotted">Testing border-style-dotted</div>
+    <div class="border-style-double">Testing border-style-double</div>
+    <div class="border-style-groove">Testing border-style-groove</div>
+    <div class="border-style-outset">Testing border-style-outset</div>
+    <div class="border-style-ridge">Testing border-style-ridge</div>
+    <div class="border-style-solid">Testing border-style-solid</div>
+</div>
+</body>
+</html>
