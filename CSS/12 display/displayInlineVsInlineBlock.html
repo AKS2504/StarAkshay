@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block div {
+            display: block;
+        }
+
+        .inline div {
+            display: inline;
+            border: 1px solid;
+            padding: 50px;
+            margin: 50px;
+            background-color: rgba(128, 128, 128, 0.491);
+        }
+        
+        .inline-block div {
+            display: inline-block;
+            border: 1px solid;
+            padding: 50px;
+            margin: 50px;
+            background-color: rgb(112, 6, 6);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Display Block</h2>
+    <div class="block">
+        <div class="list-item">Test</div>
+        <div class="list-item">Test</div>
+        <div class="list-item">Test</div>
+        <div class="list-item">Test</div>
+    </div>
+    <h2>Display inline</h2>
+    <div class="inline">
+        <p>display inline never consider margin-paading top-bottom</p>
+        <div class="list-item">Test</div>
+        <div class="list-item">Test</div>
+        <div class="list-item">Test</div>
+        <div class="list-item">Test</div>
+    </div>
+    <h2>Display inline-block</h2>
+    <div class="inline-block">
+        <p>display inline-block will be considered margin-paading top-bottom</p>
+        <div class="list-item">Test</div>
+        <div class="list-item">Test</div>
+        <div class="list-item">Test</div>
+        <div class="list-item">Test</div>
+    </div>
+
+</body>
+
+</html>
