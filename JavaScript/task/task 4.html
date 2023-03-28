@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // <li>Find the largest of three number</li>
+
+        function findLargest(num1, num2, num3) {
+
+            if (num1 > num2 && num1 > num3) {
+                console.log(`${num1} is the largest number`)
+            }
+            else if (num2 > num3) {
+                console.log(`${num2} is the largest number`)
+            }
+            else {
+                console.log(`${num3} is the largest number`)
+            }
+        }
+        console.log(findLargest(25,60,55))
+        console.log(findLargest(255,60,61))
+        console.log(findLargest(25,205,25))
+        console.log(findLargest(125,126,124))
+        console.log(findLargest(80,60,5))
+    </script>
+</body>
+
+</html>

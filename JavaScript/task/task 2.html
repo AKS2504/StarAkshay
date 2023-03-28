@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // <li>Check if input variable is a number or not</li>
+
+        function isValidNumber(num) {
+
+            if (isNaN(num)) {
+                console.log(`${num} is not a number`)
+            }
+            else {
+                console.log(`${num} is a valid number`)
+            }
+        }
+        console.log(isValidNumber(100));
+        console.log(isValidNumber(159));
+        console.log(isValidNumber("xyz"));
+        console.log(isValidNumber("abc"));
+
+        
+
+    </script>
+</body>
+
+</html>
