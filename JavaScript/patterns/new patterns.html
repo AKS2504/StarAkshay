@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var num, p, q, m, n;
+        num = 15;
+        for (m = 1; m <= num; m++) {
+            if (m % 2 == 0) {
+                p = 1;
+                q = 0;
+            } else {
+                p = 0;
+                q = 1;
+            }
+            for (n = 1; n <= m; n++)
+                if (n % 2 == 0)
+                    document.write("" + p + " ");
+                else
+                    document.write("" + q + " ");
+            document.write('<br/>');
+        }
+    </script>
+</body>
+
+</html>
