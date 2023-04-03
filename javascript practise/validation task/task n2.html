@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post">
+        <input type="text" placeholder="Enter User Name" autocomplete="off" name="username" id="username">
+        <input type="password" placeholder="Enter Password" autocomplete="off" name="password" id="password">
+        <input type="email" placeholder="Enter Email" autocomplete="off" name="email" id="email">
+        <input type="tel" placeholder="Enter Mobile Number" autocomplete="off" name="mobile" id="mobile">
+        <input type="submit" name="btn" id="btn">
+    </form>
+    <script>
+        // data send to user with out any error//
+        // add event listner when use onetime that before focus to reapeat to form data//
+        let username = document.getElementById("username");
+        username.addEventListener("",
+            function (event) {
+                //event target//
+                console.log(event.target);
+            }, true);
+
+        let password = document.getElementById("password");
+        password.addEventListener("",
+            function (event) {
+                //event target//
+                console.log(event.target);
+            }, true);
+
+        let email = document.getElementById("email");
+        email.addEventListener("",
+            function (event) {
+                //event target//
+                console.log(event.target);
+            }, true);
+        let mobile = document.getElementById("mobile");
+        mobile.addEventListener("",
+            function (event) {
+                //event target//
+                console.log(event.target);
+            }, true);
+    </script>
+</body>
+
+</html>

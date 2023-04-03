@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post" id="form">
+        <input type="text" placeholder="Enter User Name" autocomplete="off" required name="username" id="username">
+        <input type="password" placeholder="Enter Password" autocomplete="off" required name="password" id="password">
+        <input type="email" placeholder="Enter Email" autocomplete="off" required name="email" id="email">
+        <input type="tel" placeholder="Enter Mobile Number" autocomplete="off" name="mobile" id="mobile">
+        <input type="submit" name="btn" id="btn">
+    </form>
+    <script>
+        // data not a send when click on submit buttton//
+        //sumbit button not a working //
+        var form = document.getElementById('form')
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault()
+
+        })
+    </script>
+</body>
+
+</html>
