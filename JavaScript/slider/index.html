@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <style>
+img{
+    animation: mymove 3s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+}
+@keyframes mymove {
+    from{ top:0px;}
+    to{top: 800px;}
+}
+
+</style> -->
+
+<body>
+
+    <img class="slider-img" src="../czniaazwv9pgm5pegycu.png" alt="">
+    <img class="slider-img" src="../domvsbom.png" alt="">
+    <img class="slider-img" src="../Events in Javascript.png" alt="">
+    <img class="slider-img" src="../typeof-operator-in-javascript.png" alt="">
+
+    <script>
+        counter = 0
+        function slider(params) {
+            SliderImageData = document.getElementsByClassName("slider-img")
+            console.log(SliderImageData);
+            for (let index = 0; index < SliderImageData.length; index++) {
+                const element = SliderImageData[index];
+                console.log(element);
+                SliderImageData[index].style.display = "reapeat"
+            }
+            SliderImageData[counter]
+            setTimeout(() => {
+                counter++;
+                slider(CSSAnimation, Infinity)
+            }, 2.0 * 3000);
+        }
+        slider()
+    </script>
+</body>
+
+</html>
