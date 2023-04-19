@@ -16,10 +16,17 @@
     <button id="btn2"> Button 2</button>
 
     <br><br>
-    <div id="colour-div" style="background-color: red
-    ;height: 100px; width: 100px;"></div>
+    <div id="colour-div" style="background-color: red; height: 100px; width: 100px;"></div>
     <script>
-        $("btn1").click(function () { });
+        $("#btn1").click(function () {
+            $("#colour-div").slideUp(1000);
+        });
+
+        $("#btn2").click(function () {
+            $("#colour-div").slideDown(2000);
+        });
+
+
     </script>
 </body>
 
