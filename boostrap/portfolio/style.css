@@ -4,8 +4,8 @@
     --bg-black-900: #f2f2fc;
     --bg-black-100: #fdf9ff;
     --bg-black-50: #e8dfec;
-    --test-black-900: #302e4d;
-    --test-black-700: #504e70;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
 }
 
 body {
@@ -40,13 +40,17 @@ ul {
     background: var(--bg-black-900);
     min-height: 100vh;
     display: block;
-    position: fixed;
-    left: 270px;
     padding: 0 30px;
-    top: 0;
-    right: 0;
-    z-index: 0;
     opacity: 1;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.main-content {
+    padding-left: 270px;
+
 }
 
 .padd-15 {
@@ -60,7 +64,43 @@ ul {
     /* background: red; */
     margin: auto;
 }
+.section .container{
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* background-color: red; */
+    margin-bottom: 60px;
 
+}
+.section-title h2{
+    font-size: 40px;
+    color: var(--test-black-900);
+    font-weight: 700;
+    position: relative;
+}
+.section-title h2::before{
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.section-title h2::after{
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+
+}
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -68,7 +108,8 @@ ul {
     margin-right: -15px;
     position: relative;
 }
-.btn{
+
+.btn {
     font-size: 16px;
     font-weight: 500;
     padding: 12px 35px;
@@ -81,7 +122,8 @@ ul {
     transition: all 0.3s ease;
 
 }
-.btn:hover{
+
+.btn:hover {
     transform: scale(1.05);
 }
 
@@ -123,7 +165,7 @@ ul {
 
 .aside .logo a span {
     font-family: 'clicker script', cursive;
-    font-family: 40px;
+    font-size: 40px;
 
 }
 
@@ -216,7 +258,7 @@ ul {
     font-weight: 600;
     display: block;
     border-bottom: 1px solid var(--bg-black-50);
-    color: var(--test-black-900);
+    color: var(--text-black-900);
     padding: 5px 15px;
 
 }
@@ -250,7 +292,7 @@ h3.hello {
 }
 
 h3.hello span {
-    font-family:'clicker script', cursive;
+    font-family: 'clicker script', cursive;
     font-size: 30px;
     font-weight: 700;
     color: var(--skin-color);
@@ -260,13 +302,15 @@ h3.my-profession {
     font-size: 30px;
     margin: 15px 0;
 }
-.typing{
+
+.typing {
     color: var(--skin-color);
 }
-.home-info p{
+
+.home-info p {
     margin-bottom: 70px;
     font-size: 20px;
-    color: var(--test-black-700);
+    color: var(--text-black-700);
 }
 
 .home .home-img {
@@ -275,20 +319,21 @@ h3.my-profession {
     text-align: center;
     position: relative;
 }
-.home-img::after{
+
+.home-img::after {
     content: '';
     position: absolute;
     height: 80px;
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-
     right: 20px;
     bottom: -40px;
 
 
 }
-.home-img::before{
+
+.home-img::before {
     content: '';
     position: absolute;
     height: 80px;
@@ -301,4 +346,73 @@ h3.my-profession {
 
 .home .home-img img {
     height: 400px;
+    margin: auto;
+    border-radius: 5px;
+}
+/* About */
+.about .about-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* background-color: red; */
+}
+.about .about-content .about-text{
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* background-color: red; */
+
+}
+.about .about-content .about-text h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+.about .about-content .about-text h3 span{
+    color: var(--skin-color);
+
+}
+.about .about-content .about-text p{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
+.about .about-content .personal-info{
+    flex: 0 0 60%;
+    max-width: 60%;
+    /* background-color: red; */
+    margin-top:40px;
+}
+.about .about-content .personal-info .info-item{
+    flex: 0 0 50%;
+    max-width: 50%;
+    /* background-color: red; */
+}
+.about .about-content .personal-info .info-item p{
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--test-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+
+}
+.about .about-content .personal-info .info-item p span{
+    font-weight: 400;
+    color: var(--text-black-700);
+    margin-left: 4px;
+    display: inline-block;
+}
+.about .about-content .personal-info .buttons{
+    margin-top: 30px;
+    
+}
+.about .about-content .personal-info .buttons .btn{
+    margin-right: 15px;
+    margin-top: 10px;
+    
+}
+.about .about-content .skills{
+    flex: 0 0 40%;
+    max-width: 40%;
+    /* background-color: green; */
+    margin-top: 40px;
 }
