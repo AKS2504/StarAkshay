@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            margin: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Add input on button click:</h2>
+    <div id='Add-new'>
+        <!--Input container-->
+    </div>
+    <button onclick='addInput()'>+Add input</button>
+
+    <script>
+        const container = document.getElementById('Add-new');
+
+        // Call addInput() function on button click
+        function addInput() {
+            let input = document.createElement('input');
+            input.placeholder = 'Add new';
+            container.appendChild(input);
+        }
+    </script>
+</body>
+
+</html>
