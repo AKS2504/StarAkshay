@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // let abc = 45
+
+        class Admission {
+            submit() {
+                alert(this.name + " your admissin is done")
+            }
+            cancle() {
+                alert(this.name + " your admissin is cancle")
+            }
+            fill(givename) {
+                this.name = givename
+            }
+        }
+
+        let raj = new Admission()
+        console.log(raj);
+        raj.fill("raj")
+        raj.submit()
+
+        let dash = new Admission()
+        console.log(dash);
+        dash.fill("dash")
+        dash.cancle()
+
+        let kush = new Admission()
+        console.log(kush);
+        kush.fill("kush")
+        kush.submit()
+
+    </script>
+
+</body>
+
+</html>
