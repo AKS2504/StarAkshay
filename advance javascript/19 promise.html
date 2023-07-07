@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // let friend = true
+
+        // function promise(friend) {
+        //    return new Promise(function(sec, den){
+        //     if(friend){
+        //         sec("your frnd is true");
+        //     }
+        //     else{
+        //         den("your frnd is not frnd");
+        //     };
+
+        // });
+        // }
+
+        // let incode= (result)=>{
+        //     console.log(result);
+        // }
+        // let outcode= (error)=>{
+        //     console.log(error);
+        // }
+
+
+        // promise(true).then(console.log("log"));
+        // console.log(promise);
+        // promise(true).then(result)
+
+        // let complate = true
+
+        function data(complate) {
+            return new Promise(function (sec, den) {
+                if (complate) {
+                    sec("hello");
+                }
+                else {
+                    den("error");
+                }
+            })
+        }
+        let incode = (result) => {
+            console.log(result);
+        }
+        let outcode = (error) => {
+            console.log(error);
+        }
+        // console.log(promise);
+        data(true).then(incode)
+        // promise(false).catch(outcode)
+        data(false).catch(outcode)
+        // console.log(promise(true));
+
+
+      
+
+
+    </script>
+
+</body>
+
+</html>
