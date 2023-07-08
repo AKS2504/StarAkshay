@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+
+<body>
+    <script>
+        //Promise - It is a javascript object it track that weather the event is complated or not
+        //When the event is complated what the output will come it also checks.
+        //Promise in JS use to deal the asynchronous operations
+        function promise(complate) {
+            return new Promise(function (sec, dec) {
+                if (complate) {
+                    sec("Success");
+                }
+                else {
+                    dec("Fail");
+                }
+            })
+        }
+        let incode = (result) => {
+            console.log(result);
+        }
+        let outcode = (error) => {
+            console.log(error);
+        }
+        // console.log(promise);
+        promise(true).then(incode);
+        promise(false).catch(outcode);
+    </script>
+</body>
+
+</html>

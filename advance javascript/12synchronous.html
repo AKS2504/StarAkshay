@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>synchronous</title>
+</head>
+
+<body>
+    <script>
+        //JavaScript always synchronous language
+        //Here synchronous means line by line the code is executed 
+        //After i write setTimeOut also it reads the code then after finishing the iterval hello2 line is print that's why js is synchronous
+        setTimeout(() => {
+            console.log("Hello2")
+
+        }, 1000);
+        console.log("Hello1")
+        console.log("Hello3")
+    </script>
+</body>
+
+</html>

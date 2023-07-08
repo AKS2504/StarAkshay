@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+
+<body>
+    <script>
+        let hello = () => {
+            console.log("Hello");
+        }
+        function goodmorning() {
+            console.log("Good Morning");
+        }
+        function add(a, b, callback) {
+            console.log(a + b);
+            callback();
+        }
+        add(2, 3, hello);
+        add(2, 5, goodmorning);
+    </script>
+</body>
+
+</html>

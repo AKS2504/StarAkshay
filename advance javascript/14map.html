@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //map creates a new array from calling a function for every array element.
+        // it does not execute the function for empty element.
+        // map does not change the original array.
+        let array = [1, 2, 3, 4, 5, 6];
+        console.log("old array", array);
+        let a = array.map((a) => {
+            return a + 2;
+        })
+        console.log("New Array", a);
+        let arr = a.map((value, index, array) => {
+            console.log(value, index, array);
+            return value;
+        });
+        console.log(arr);
+    
+    </script>
+</body>
+
+</html>
