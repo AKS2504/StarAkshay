@@ -22,15 +22,17 @@
                 }
             })
         }
-        let incode = (result) => {
-            console.log(result);
-        }
-        let outcode = (error) => {
-            console.log(error);
-        }
+        // let incode = (result) => {
+        //     console.log(result);
+        // }
+        // let outcode = (error) => {
+        //     console.log(error);
+        // }
         // console.log(promise);
-        promise(true).then(incode);
-        promise(false).catch(outcode);
+        promise(true).then();
+        promise(false).catch();
+        console.log(promise(true));
+    
     </script>
 </body>
 
