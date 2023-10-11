@@ -19,6 +19,10 @@ render(){
             <li><Link to="Classuncontrolledcompo">Classuncontrolledcompo</Link></li>
             <li><Link to="Classcontrolledcompo">Classcontrolledcompo</Link></li>
             <li><Link to="Classlistandkey">Classlistandkey</Link></li>
+            <li><Link to="Userlaypoteffect">Userlaypoteffect</Link></li>
+
+            
+
 
             
 

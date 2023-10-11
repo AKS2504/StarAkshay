@@ -10,6 +10,8 @@ import Classrendering from "./06Classrendering";
 import Classuncontrolledcompo from "./07 Classuncontrolledcompo";
 import Classcontrolledcompo from "./08Classcontrolledcompo";
 import Classlistandkey from "./09Classlistandkey";
+import Userlaypoteffect from "./Hoc/Userlaypoteffect";
+
 
 class Classcomporoutes extends Component{
     render(){
@@ -25,6 +27,11 @@ class Classcomporoutes extends Component{
                  <Route path="Classuncontrolledcompo" element={<Classuncontrolledcompo/>}/>
                  <Route path="Classcontrolledcompo" element={<Classcontrolledcompo/>}/>
                  <Route path="Classlistandkey" element={<Classlistandkey/>}/>
+                 <Route path="Userlaypoteffect" element={<Userlaypoteffect/>}/>
+
+                
+
+
 
 
 
