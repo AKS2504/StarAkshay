@@ -21,13 +21,6 @@ render(){
             <li><Link to="Classlistandkey">Classlistandkey</Link></li>
             <li><Link to="Userlaypoteffect">Userlaypoteffect</Link></li>
 
-            
-
-
-            
-
-
-
 
         </ul>
             {/* </div> */}
